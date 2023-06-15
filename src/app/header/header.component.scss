@@ -1,0 +1,35 @@
+.navbar-header {
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 3px 5px -1px #0003,0 6px 10px #00000024,0 1px 18px #0000001f;
+}
+.navbar-header__wrapper  {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.wrapper a {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+mat-icon {
+  margin-right: 4px;
+}

@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 40px;
+}
+.wrapper {
+  max-width: 1440px;
+}
+.footer__wrapper  {
+  border-top: 1px solid grey;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_order {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_contribute, .footer_getting_started, .footer_contact {
+  display: flex;
+  flex-direction: column;
+}
