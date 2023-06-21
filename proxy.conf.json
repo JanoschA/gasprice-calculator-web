@@ -1,0 +1,7 @@
+{
+  "/gasprice-calculator-web/*": {
+    "target": "https://janoscha.github.io",
+    "secure": true,
+    "logLevel": "info"
+  }
+}
