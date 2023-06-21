@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "proxyConfig": "src/proxy.conf.json",
             "outputPath": "dist/gasprice-calculator-web",
             "index": "src/index.html",
             "main": "src/main.ts",
