@@ -27,7 +27,7 @@ export class GpcComponent {
     });
 
     this.http
-      .get<User>("http://app.gasprice-calculator.com/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
+      .get<User>("https://app.gasprice-calculator.com/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
       //.get<User>("http://localhost:8080/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
       .subscribe((data: User) => this.defaultValue = data.email);
   }
