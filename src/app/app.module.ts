@@ -33,7 +33,7 @@ import { GpcComponent } from './gpc/gpc.component';
     HttpClientModule
   ],
   providers: [{
-    provide: APP_BASE_HREF, useValue: "/gasprice-calculator-web"
+    provide: APP_BASE_HREF, useValue: "/"
   }],
   bootstrap: [AppComponent]
 })
