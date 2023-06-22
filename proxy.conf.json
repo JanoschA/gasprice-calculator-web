@@ -1,6 +1,6 @@
 {
   "/*": {
-    "target": "https://janoscha.github.io",
+    "target": "https://janoscha.github.io/gasprice-calculator-web",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "info"
