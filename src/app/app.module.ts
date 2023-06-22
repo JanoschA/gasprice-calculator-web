@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import {NgOptimizedImage} from "@angular/common";
+import {APP_BASE_HREF, NgOptimizedImage} from "@angular/common";
 import { GpcComponent } from './gpc/gpc.component';
 
 @NgModule({
@@ -32,7 +32,9 @@ import { GpcComponent } from './gpc/gpc.component';
     NgOptimizedImage,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_BASE_HREF, useValue: "/gasprice-calculator-web/"
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
