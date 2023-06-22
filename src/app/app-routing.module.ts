@@ -10,15 +10,12 @@ const routes: Routes = [
   { path: 'imprint', component: ImprintComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'sign-in', component: SignInComponent },
-  { path: '/sign-in', component: SignInComponent },
   { path: 'gpc', component: GpcComponent },
-  { path: 'oauth2/redirect', component: GpcComponent },
-  { path: '/oauth2/redirect', component: GpcComponent },
-  { path: '**', component: AppComponent }
+  { path: 'oauth2/redirect', component: GpcComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
