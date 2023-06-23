@@ -2,11 +2,10 @@
   <div class="login-content">
     <h1 class="login-title">Sign In</h1>
     <div class="social-login">
-      <!--<a class="btn btn-block social-btn google" href="http://localhost:8080/oauth2/authorize/google?redirect_uri=http://localhost:4200/#/oauth2/redirect">-->
-      <a class="btn btn-block social-btn google" href="https://app.gasprice-calculator.com/oauth2/authorize/google?redirect_uri=https://gasprice-calculator.com/%23/oauth2/redirect">
+      <a class="btn btn-block social-btn google" href="{{ environment.serverHost }}/oauth2/authorize/google?redirect_uri={{ environment.baseHost }}/%23/oauth2/redirect">
         <img src="assets/google-logo.png" alt="Google" height="120"/> Sign in with Google
       </a>
-      <a class="btn btn-block social-btn google" href="https://app.gasprice-calculator.com/oauth2/authorize/github?redirect_uri=https://gasprice-calculator.com/%23/oauth2/redirect">
+      <a class="btn btn-block social-btn google" href="{{ environment.serverHost }}/oauth2/authorize/github?redirect_uri={{ environment.baseHost }}/%23/oauth2/redirect">
         <img src="assets/github-mark.svg" alt="GitHub" height="120"/> Sign in with GitHub
       </a>
     </div>

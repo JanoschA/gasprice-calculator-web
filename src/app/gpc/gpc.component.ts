@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import {User} from "./User";
+import {environment} from "../../environment";
 
 @Component({
   selector: 'app-gpc',
@@ -27,8 +28,7 @@ export class GpcComponent {
     });
 
     this.http
-      .get<User>("https://app.gasprice-calculator.com/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
-      //.get<User>("http://localhost:8080/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
+      .get<User>(environment.serverHost + "/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
       .subscribe((data: User) => this.defaultValue = data.email);
   }
 
