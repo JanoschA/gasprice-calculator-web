@@ -4,10 +4,13 @@
       <mat-icon aria-hidden="false" aria-label="business icon" fontIcon="business"></mat-icon>
       Gasprice Calculator
     </a>
-    <a routerLink="/sign-in" href="/sign-in">
+    <a routerLink="/sign-in" href="/sign-in" *ngIf="user == null">
       <mat-icon aria-hidden="false" aria-label="account circle icon" fontIcon="account_circle"></mat-icon>
       Sign In
     </a>
-    <img src="{{ getUser().imageUrl}}" height="100"/>
+    <a routerLink="/gpc/user" href="/gpc/user" *ngIf="user != null">
+      <img src="{{ user.imageUrl}}" class="user-img"/>
+      {{ user.name}}
+    </a>
   </div>
 </nav>

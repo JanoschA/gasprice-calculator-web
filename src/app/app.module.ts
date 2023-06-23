@@ -13,6 +13,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { SignInComponent } from './sign-in/sign-in.component';
 import {APP_BASE_HREF, NgOptimizedImage} from "@angular/common";
 import { GpcComponent } from './gpc/gpc.component';
+import { UserComponent } from './gpc/user/user.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GpcComponent } from './gpc/gpc.component';
     ImprintComponent,
     PrivacyPolicyComponent,
     SignInComponent,
-    GpcComponent
+    GpcComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
