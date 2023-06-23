@@ -12,7 +12,6 @@ import {environment} from "../../environments/environment";
 export class GpcComponent {
 
   error: string | null = "";
-  public defaultValue: string = "";
 
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
     console.log(this.route.queryParamMap);
@@ -29,7 +28,7 @@ export class GpcComponent {
 
     this.http
       .get<User>(environment.serverHost + "/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
-      .subscribe((data: User) => this.defaultValue = data.email);
+      .subscribe((data: User) => localStorage.setItem("user", JSON.stringify(data)));
   }
 
 
