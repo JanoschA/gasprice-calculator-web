@@ -9,7 +9,7 @@ import {User} from "../gpc/User";
 export class HeaderComponent {
 
   public getUser(): User {
-    return JSON.parse(localStorage.getItem("user"));
+    return JSON.parse(localStorage.getItem("user") as string);
   }
 
 }
