@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import {User} from "./User";
-import {environment} from "../../environment/environment";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-gpc',
