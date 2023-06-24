@@ -15,6 +15,12 @@ jobs:
           fetch-depth: 0
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
+        with:
+          args:
+            -Dsonar.organization=janoscha
+            -Dsonar.projectKey=JanoschA_gasprice-calculator-web
+            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.branch.name=master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
