@@ -1,3 +1,16 @@
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=bugs)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
+
+// TODO: PROJECT IS STILL IN WORK!!!
+
 # GaspriceCalculatorWeb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
