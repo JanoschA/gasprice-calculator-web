@@ -9,7 +9,7 @@
       Sign In
     </a>
     <a routerLink="/gpc/user" href="/gpc/user" *ngIf="user != null">
-      <img src="{{ user.imageUrl}}" class="user-img"/>
+      <img src="{{ user.imageUrl}}" class="user-img" alt="the own profile image"/>
       {{ user.name}}
     </a>
   </div>

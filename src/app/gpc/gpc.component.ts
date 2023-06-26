@@ -19,10 +19,8 @@ export class GpcComponent {
     this.route.queryParamMap.subscribe((params) => {
       this.error = params.get('error');
 
-      if ("false" == this.error) {
-        //this.router.navigate(['/'], { relativeTo: this.route }).then(() => {}) // <-- this works
-      } else {
-        // TODO
+      if ("true" == this.error) {
+        console.log("Error from OAuth Server")
       }
     });
 

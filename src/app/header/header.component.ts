@@ -13,7 +13,7 @@ export class HeaderComponent {
   constructor() {
     let user = localStorage.getItem("user");
     if (user != null) {
-      this.user = JSON.parse(user as string);
+      this.user = JSON.parse(user);
     } else {
       this.user = null;
     }
