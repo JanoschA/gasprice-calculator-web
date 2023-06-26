@@ -9,36 +9,53 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
 
-// TODO: PROJECT IS STILL IN WORK!!!
+# Gasprice Calculator Frontend Application ![](https://img.shields.io/badge/Code-Angular-informational?style=flat&logo=angular&logoColor=white&color=2bbc8a) ![Project Status](https://img.shields.io/badge/Project_Status-IN_PROGRESS-red)
 
-# GaspriceCalculatorWeb
+The Gasprice Calculator is an application, that helps the user to predict his future gas prices.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Even more it tries to tell him, when he maybe needs to order gas again.
 
-## Development server
+## Table Of Content
+- [Online Application](#Online-Application)
+- [Requirements](#Requirements)
+- [Other Components](#Other-Components)
+- [Installation](#installation)
+  - [NPM](#NPM) 
+  - [Run Locally](#Run-Locally)
+- [Inspiration](#Inspiration)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Online-Application
+You can check out online this project here: [gasprice-calculator.com](https://gasprice-calculator.com)
 
-## Code scaffolding
+## Requirements
+To use this application the user need a gas heating system and a gas tank.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To calculate correctly the system need at least a few gas bills.
 
-## Build
+## Other-Components
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[Backend Application](https://github.com/JanoschA/gasprice-calculator)
 
-## Running unit tests
+[Wiki](https://github.com/JanoschA/gasprice-calculator/wiki)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+### NPM
+TODO: Describe to install npm & co.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Run-Locally
+After successfully checkout this repository you can run locally this project with command:
 
-## Further help
+```
+ng serve --configuration=production
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Build for production
 
-## Inspiration Links
+```
+npm run build:prod
+```
+
+## Inspiration
 
 https://dev.to/rodrigokamada/hosting-an-angular-application-on-github-pages-using-github-actions-5ag8
