@@ -27,6 +27,8 @@ export class GpcComponent {
     this.http
       .get<User>(environment.serverHost + "/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
       .subscribe((data: User) => localStorage.setItem("user", JSON.stringify(data)));
+
+    this.router.navigate(['/gpc/overview']).then(() => console.log("successful redirect to gpc/overview"));
   }
 
 

@@ -14,6 +14,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import {APP_BASE_HREF, NgOptimizedImage} from "@angular/common";
 import { GpcComponent } from './gpc/gpc.component';
 import { UserComponent } from './gpc/user/user.component';
+import { OverviewComponent } from './gpc/overview/overview.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserComponent } from './gpc/user/user.component';
     PrivacyPolicyComponent,
     SignInComponent,
     GpcComponent,
-    UserComponent
+    UserComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
