@@ -1,27 +1,27 @@
-import { Component } from '@angular/core';
-import {User} from "../gpc/User";
+import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { User } from '../gpc/User';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  public user$: Observable<User | null>;
 
-  public user : User | null
+  constructor() {}
 
-  constructor() {
+  ngOnInit() {
+    this.user$ = this.getUser();
+  }
+
+  public getUser(): Observable<User | null> {
     let user = localStorage.getItem("user");
     if (user != null) {
-      this.user = JSON.parse(user);
+      return of(JSON.parse(user));
     } else {
-      this.user = null;
+      return of(null);
     }
   }
-
-
-  public getUser(): User {
-    return JSON.parse(localStorage.getItem("user") as string);
-  }
-
 }
