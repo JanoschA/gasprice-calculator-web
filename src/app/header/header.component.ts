@@ -8,7 +8,7 @@ import { User } from '../gpc/User';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public user$: Observable<User | null>;
+  public user$: Observable<User | null> = of(null);
 
   constructor() {}
 
