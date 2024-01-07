@@ -15,8 +15,8 @@ export class GpcComponent {
   error: string | null = "";
 
   constructor(
-    private route: ActivatedRoute, 
-    private router: Router, 
+    private route: ActivatedRoute,
+    private router: Router,
     private http: HttpClient,
     private authService: AuthService) {
     console.log(this.route.queryParamMap);
@@ -33,6 +33,7 @@ export class GpcComponent {
       .get<User>(environment.serverHost + "/profile", {withCredentials: true, responseType: 'json', observe: 'body'})
       .subscribe((data: User) => {
         localStorage.setItem("user", JSON.stringify(data));
+        console.log('User data after saving:', localStorage.getItem("user"));
         this.authService.updateUser();
       });
 
