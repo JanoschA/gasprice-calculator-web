@@ -18,7 +18,6 @@ export class AuthService {
 
   private loadUser() {
     let user = localStorage.getItem("user");
-    console.log('User data in AuthService:', user);
     if (user != null) {
       this.userSubject.next(JSON.parse(user));
     }
