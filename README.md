@@ -1,11 +1,13 @@
 # Gasprice Calculator Web Application! ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
-![Project Status](https://img.shields.io/badge/Project_Status-IN_PROGRESS-red)
+![Project Status](https://img.shields.io/badge/Project_Status-PAUSED-red)
 ![](https://img.shields.io/badge/Code-Angular-informational?style=flat&logo=angular&logoColor=white&color=2bbc8a)
+
+# WARNING, THIS PROJECT WAS PAUSED!!!
+## The Code will be still there, but the infrustructure will be gone until I started it again.
 
 The Gasprice Calculator Web Application is a dynamic tool built with Angular, designed to provide real-time calculations and predictions of future gas prices. It leverages a sophisticated algorithm from our [backend application](https://github.com/JanoschA/gasprice-calculator), which takes into account various factors such as historical data, current market trends, and geopolitical events to deliver accurate predictions.
 
-Explore the application at [gasprice-calculator.com](https://gasprice-calculator.com).
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=JanoschA_gasprice-calculator-web&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=JanoschA_gasprice-calculator-web)
